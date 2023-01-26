@@ -5,22 +5,14 @@
 				<!-- Widget About -->
 				<aside class="col-md-4 col-sm-6 col-xs-6 ftr-widget recent-widget">
 					<h3>Recent Posts</h3>
-					<a href="#">Come aboard were expecting.</a>
-					<a href="#">No phone no lights no motor car.</a>
-					<a href="#">Movie star the professor and Mary Ann. </a>
-					<a href="#">ts pilot Captain William Buck Rogers.</a>
-					<a href="#">the voyages of the Starship Enterprise.</a>
-					
+					<a href="#">Comming Soon...</a>
 				</aside><!-- Widget About /- -->
 				<!-- Widget Links -->
 				<aside class="col-md-2 col-sm-6 col-xs-6 ftr-widget link-widget">
-					<h3>Infornatiolinks</h3>
+					<h3>LINKS</h3>
 					<ul>
 						<li><a href="#" title="About">About</a></li>
-						<li><a href="#" title="Services">Services</a></li>
-						<li><a href="#" title="Features">Features</a></li>
-						<li><a href="#" title="Portfolio">Portfolio</a></li>
-						<li><a href="#" title="24/7Support">24/7Support</a></li>
+						<li><a href="#" title="Gallery">Gallery</a></li>
 						<li><a href="#" title="Portfolio">Blog</a></li>
 						<li><a href="#" title="Contact">Contact</a></li>
 					</ul>
@@ -28,8 +20,8 @@
 				<!-- Widget Contact -->
 				<aside class="col-md-3 col-sm-6 col-xs-6 ftr-widget contact-widget">
 					<h3>contact Info</h3>
-					<p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:hello@cakeshop.com" title="hello@cakeshop.com">info@anous.com</a></p>
-					<p><i class="fa fa-phone" aria-hidden="true"></i> P: 1-800-23-456-7890 F: 1-800-23-456-7890</p>
+					<p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:dovecatering@gmail.com" title="hello@cakeshop.com">info@dovecatering.com</a></p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> P: +234-(0)-803-592-0146 F: +234-(0)-805-746-7832</p>
 					<p><i class="fa fa-map-marker" aria-hidden="true"></i> 99 Barnard St - Suite 111 United States - GA 22222 </p>
 					<ul>
 						<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
@@ -64,7 +56,7 @@
 	<div class="bottom-footer-1 container-fluid no-padding">
 		<div class="container">
 			<div class="footer-copyright">
-				<p>copyrights &copy; 2016 royalbakers. all rights reserved</p>
+				<p>copyrights &copy; 2023 dovetech. all rights reserved</p>
 			</div>
 		</div>
 	</div><!-- Bottom Footer /- -->
