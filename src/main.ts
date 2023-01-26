@@ -5,6 +5,6 @@ import App from './App.vue'
 import '@/styles/style.css'
 
 // ROUTER
-import router from './router';
+import router from '@/router';
 
 createApp(App).use(router).mount('#app')
