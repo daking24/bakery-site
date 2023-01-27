@@ -103,34 +103,31 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="partycakes">
-						<div class="col-md-6 col-sm-6 col-xs-6">
+						<div v-for="cake in cakes" :key="cake.name" class="col-md-6 col-sm-6 col-xs-6">
 							<div class="menu-box-1">
-								<img src="/assets/images/menu-7.jpg" alt="menu" width="167" height="190"/>
-								<h3>White creamy</h3>
-								<p>The day he wane day he was shooting at some food and up through the ground.</p>
-								<h5>$20.00</h5>
+								<img :src="cake.image" alt="menu" width="167" height="190"/>
+								<h3>{{ cake.name }}</h3>
+								<p>{{cake.content}}</p>
 							</div>
 						</div>
 					</div>
 					
 					<div role="tabpanel" class="tab-pane" id="weddingcakes">
-						<div class="col-md-6 col-sm-6 col-xs-6">
+						<div v-for="snack in snacks" :key="snack.name" class="col-md-6 col-sm-6 col-xs-6">
 							<div class="menu-box-1">
-								<img src="images/menu-7.jpg" alt="menu" width="167" height="190"/>
-								<h3>White creamy 1</h3>
-								<p>The day he wane day he was shooting at some food and up through the ground.</p>
-								<h5>$20.00</h5>
+								<img   :src="snack.image" alt="menu" width="167" height="190"/>
+								<h3>{{ snack.name }}</h3>
+								<p>{{ snack.content }}</p>
 							</div>
 						</div>
 					</div>
 					
 					<div role="tabpanel" class="tab-pane" id="birthdaycakes">
-						<div class="col-md-6 col-sm-6 col-xs-6">
+						<div v-for="food in foods" :key="food.name" class="col-md-6 col-sm-6 col-xs-6">
 							<div class="menu-box-1">
-								<img src="images/menu-7.jpg" alt="menu" width="167" height="190"/>
-								<h3>White creamy 2</h3>
-								<p>The day he wane day he was shooting at some food and up through the ground.</p>
-								<h5>$20.00</h5>
+								<img :src="food.image" alt="menu" width="167" height="190"/>
+								<h3>{{ food.name }}</h3>
+								<p>{{ food.content }}</p>
 							</div>
 						</div>
 						
@@ -149,42 +146,42 @@ export default defineComponent({
   name: "Home",
 	setup () {
 		const cakes = ref([
-			{name: "Chocolate Cake", content: "Our Chocolate Cake is a rich, decadent treat made with the finest ingredients, layered with velvety chocolate ganache, and garnished with chocolate shavings and a drizzle of chocolate sauce. Perfect for any chocolate lover's craving."},
-			{name: "Vanilla Cake", content: "Our Vanilla Cake is a classic and timeless treat, made with the freshest ingredients and real vanilla extract for a pure, sweet and delicate flavor. Moist and fluffy, it's the perfect cake for any occasion."},
-			{name: "Nuts Cake", content: "A moist and flavorful cake made with a combination of various nuts and spices, perfect for those who love the taste of nuts in their desserts."},
-			{name: "Fruits Cake", content: "A delicious and refreshing cake made with a variety of fresh fruits and topped with a tangy fruit glaze, perfect for those who love a fruity taste in their desserts."},
-			{name: "Strawberry Cake", content: "A classic and delicious cake made with fresh strawberries and topped with a sweet strawberry glaze, perfect for those who love the taste of strawberries."},
-			{name: "Plain Cake", content: "A simple yet delicious cake made with basic ingredients, perfect for those who prefer a classic taste in their desserts."},
-			{name: "Sponge Cake", content: "A light and airy cake made with eggs and sugar, perfect for those who prefer a lighter texture in their desserts."},
-			{name: "Red Velvet Cake", content: "A classic and moist cake made with cocoa powder and topped with a sweet cream cheese frosting, perfect for those who love the taste of red velvet."},
-			{name: "Carrot Cake", content: "A moist and flavorful cake made with grated carrots, spices, and topped with a sweet cream cheese frosting, perfect for those who love the taste of carrots in their desserts."},
-			{name: "Mixed Cake", content: "A fun and unique cake made with a combination of different flavors, perfect for those who love to experiment with different tastes in their desserts."},
+			{image:"/assets/images/choco-cake.jpg", name: "Chocolate Cake", content: "Indulge in our rich Chocolate Cake made with premium ingredients, topped with ganache, chocolate shavings, and sauce."},
+			{image:"/assets/images/vanilla-cake.jpg", name: "Vanilla Cake", content: "A classic treat made with fresh ingredients, real vanilla extract for a pure and delicate flavor. Perfect for any occasion, it's moist and fluffy"},
+			{image:"/assets/images/nuts-cake.jpg", name: "Nuts Cake", content: "A moist and flavorful cake made with a combination of various nuts and spices, for those who love the taste of nuts in their desserts."},
+			{image:"/assets/images/fruits-cake.jpg", name: "Fruits Cake", content: "A delicious and refreshing cake made with a variety of fruits, perfect for those who love a fruity taste in their desserts."},
+			{image:"/assets/images/straw-cake.jpg", name: "Strawberry Cake", content: "A classic and delicious cake made with fresh strawberries, perfect for those who love the taste of strawberries."},
+			{image:"/assets/images/plain-cake.jpg", name: "Plain Cake", content: "A simple yet delicious cake made with basic ingredients, perfect for those who prefer a classic taste in their desserts."},
+			{image:"/assets/images/sponge-cake.jpg", name: "Sponge Cake", content: "A light and airy cake made with eggs and sugar, perfect for those who prefer a lighter texture in their desserts."},
+			{image:"/assets/images/redvel-cake.jpg", name: "Red Velvet Cake", content: "A classic and moist cake made with cocoa powder, perfect for those who love the taste of red velvet."},
+			{image:"/assets/images/carrot-cake.jpg", name: "Carrot Cake", content: "A moist and flavorful cake made with grated carrots, spices, perfect for those who love the taste of carrots in their desserts."},
+			{image:"/assets/images/mixed-cake.jpg", name: "Mixed Cake", content: "A fun and unique cake made with a combination of different flavors, perfect for those who love to experiment with different tastes in their desserts."},
 		]);
 
 		const snacks = ref([
-			{name: "Baked Fish Rolls", content: "A savory and delicious pastry filled with a flaky baked dough filled with fish and spiced healthy vegetables, perfect for a quick and satisfying snack."},
-			{name: "Sausage Rolls", content: "A classic and savory pastry filled with a spicy sausage mixture and wrapped in a flaky puff pastry, perfect for a snack or breakfast."},
-			{name: "Mini Shawarma Rolls", content: "A new invented savory pastry filled with a spicy sausage and stir-fried vegetables for any occassion."},
-			{name: "Egg Rolls", content: "A savory and crispy deep fried roll filled with a boiled egg perfect as a snack or appetizer."},
-			{name: "Puff Puffs", content: "A deep-fried dough ball made from a mixture of flour, sugar, and yeast, perfect for a sweet and satisfying snack."},
-			{name: "Chin-chin", content: "A sweet and crunchy snack made from a mixture of flour, sugar, and butter, perfect for a sweet treat."},
-			{name: "Meat Pie", content: "A savory pastry filled with a mixture of meat and vegetables, perfect for a satisfying snack or meal."},
-			{name: "Doughnuts", content: " A deep-fried dough pastry, often coated in sugar or glaze, perfect for a sweet and satisfying snack."},
-			{name: "Samosa", content: "A savory and crispy pastry filled with a mixture of vegetables, spices, and meat, perfect for a snack or appetizer."},
-			{name: "Spring Rolls", content: "A savory and crispy roll filled with a mixture of vegetables, meat, and spices, perfect as a snack or appetizer."},
+			{image:"/assets/images/fishroll.jpg", name: "Baked Fish Rolls", content: "A savory and delicious flaky baked dough filled with fish and spiced healthy vegetables, perfect for a quick and satisfying snack."},
+			{image:"/assets/images/sausage-roll.jpg", name: "Sausage Rolls", content: "A classic and savory pastry filled with a spicy sausage mixture and wrapped in a flaky puff pastry, perfect for a snack or breakfast."},
+			{image:"/assets/images/min-shawarma.jpg", name: "Mini Shawarma Rolls", content: "A new invented savory pastry filled with a spicy sausage and stir-fried vegetables for any occassion."},
+			{image:"/assets/images/eggrolls.jpg", name: "Egg Rolls", content: "A savory, crispy and crunchy deep fried roll filled with a boiled egg, perfect as a snack or appetizer. Best on the go."},
+			{image:"/assets/images/puffs.jpg", name: "Puff Puffs", content: "A deep-fried dough ball made from a mixture of flour, sugar, and yeast, perfect for a sweet and satisfying snack."},
+			{image:"/assets/images/chinchin.jpg", name: "Chin-chin", content: "A sweet and crunchy snack made from a mixture of flour, sugar, and butter, perfect for a sweet treat."},
+			{image:"/assets/images/meatpie.jpg", name: "Meat Pie", content: "A savory pastry made of dough and filled with a mixture of meat and vegetables, perfect for a satisfying snack or meal."},
+			{image:"/assets/images/doughnut.jpg", name: "Doughnuts", content: " A deep-fried dough pastry, often coated in sugar or flavour-selected-glaze, perfect for a sweet and satisfying snack."},
+			{image:"/assets/images/samosa.jpg", name: "Samosa", content: "A savory and crispy pastry filled with a mixture of vegetables, spices, and meat, perfect for a snack or appetizer."},
+			{image:"/assets/images/spring-rolls.jpg", name: "Spring Rolls", content: "A savory and crispy roll filled with a mixture of vegetables, meat, and spices, perfect as a snack or appetizer."},
 		]);
 
 		const foods = ref([
-			{name: "Fried Rice", content: " A savory and satisfying dish made with steamed rice stir-fried with vegetables and protein."},
-			{name: "Jollof Rice", content: "A traditional Nigerian dish made with tomatoes, onions, and spices, cooked with rice and protein."},
-			{name: "White Rice and Stew", content: "A classic dish made with steamed white rice and a flavorful stew made with vegetables and protein."},
-			{name: "Spaghetti and Tomato Stew", content: "A combination of spaghetti pasta and a flavorful tomato-based stew with protein and vegetables."},
-			{name: "Ewedu Soup", content: "A traditional Nigerian soup made with jute leaves and served with a combination of protein and carbohydrates."},
-			{name: "Gbegiri Soup (Beans soup)", content: "A traditional Nigerian soup made with beans and served with a combination of protein and carbohydrates."},
-			{name: "Egusi Soup", content: "A traditional Nigerian soup made with ground melon seeds and served with a combination of protein and carbohydrates."},
-			{name: "Okro Soup", content: "A traditional Nigerian soup made with okra and served with a combination of protein and carbohydrates."},
-			{name: "Vegetable Soup", content: "A hearty and healthy soup made with a variety of vegetables and proteins."},
-			{name: "Salad", content: "A refreshing and healthy dish made with a variety of fresh greens and vegetables."},
+			{image:"/assets/images/friedrice.jpg",name: "Fried Rice", content: " Our fried rice is a traditional dish made with freshly cooked rice, mixed with vegetables and your choice of protein."},
+			{image:"/assets/images/jollofrice.jpg",name: "Jollof Rice", content: "A West African dish made with rice, tomatoes, onions, peppers, and spices. It is a one-pot dish that is cooked with meat or fish."},
+			{image:"/assets/images/rice-stew.jpg",name: "White Rice and Stew", content: "A classic dish made with steamed white rice and a flavorful stew made with vegetables and protein."},
+			{image:"/assets/images/spaghetti.jpg",name: "Spaghetti and Tomato Stew", content: "A classic dish made with spaghetti pasta, fresh tomatoes, and a variety of herbs and spices. It's a hearty and satisfying meal."},
+			{image:"/assets/images/ewedu.jpg",name: "Ewedu Soup", content: "A traditional Nigerian soup made with jute leaves and served with a combination of protein and carbohydrates."},
+			{image:"/assets/images/beans-soup.jpg",name: "Gbegiri Soup (Beans soup)", content: "A traditional Nigerian soup made with beans and served with a combination of protein and carbohydrates."},
+			{image:"/assets/images/egusi.jpg",name: "Egusi Soup", content: "A traditional Nigerian soup made with ground melon seeds and served with a combination of protein and carbohydrates."},
+			{image:"/assets/images/okro-soup.jpg",name: "Okro Soup", content: "A traditional Nigerian soup made with okra and served with a combination of protein and carbohydrates."},
+			{image:"/assets/images/vege-soup.jpg",name: "Vegetable Soup", content: "Our homemade vegetable soup is made with a medley of fresh vegetables, simmered in a rich broth for a comforting and nourishing meal."},
+			{image:"/assets/images/salad.jpg",name: "Salad", content: "Our fresh and healthy salad is made with a variety of mixed greens and your choice of toppings. Perfect for a light lunch or dinner."},
 		]);
 
 		return {
