@@ -33,21 +33,27 @@
 				</aside><!-- Widget Contact /- -->
 				<!-- Widget Isnstagram -->
 				<aside class="col-md-3 col-sm-6 col-xs-6 ftr-widget form-widget">
+					<form :action="FORM_ENDPOINT"
+      @submit="handleSubmit"
+      method="POST"
+      target="_blank">
 					<h3>Quick Contact</h3>
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Name" required/>
+						<input type="text" name="name" class="form-control" placeholder="Name" required/>
 					</div>
 					
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Email Address" required/>
+						<input type="email" name="email" class="form-control" placeholder="Email Address" required/>
 					</div>
 					
 					<div class="form-group">
-						<textarea placeholder="Message" rows="4" class="form-control"></textarea>
+						<textarea name="message" placeholder="Message" rows="4" class="form-control"></textarea>
 					</div>
 					<div class="form-group">
-						<button title="Send" name="post">Send</button>
+						<button type="submit" title="Send" name="post">Send</button>
 					</div>
+					</form>
+						<!-- <div v-if="status">We'll be in touch soon</div> -->
 				</aside><!-- Widget Newsletter /- -->
 			</div>
 		</div>
@@ -63,9 +69,26 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/runtime-core";
+import { defineComponent, ref } from "@vue/runtime-core";
 
 export default defineComponent({
   name: "AppFooter", 
+	setup() {
+		const FORM_ENDPOINT = ref('https://public.herotofu.com/v1/41c27530-a0f8-11ed-82c7-3d7607318e65');
+		const status = ref(false);
+
+		function handleSubmit(e:any) {
+			setTimeout(() => {
+				status.value = true;
+			}, 100);
+		}
+
+		return {
+			status,
+			handleSubmit,
+			FORM_ENDPOINT,
+		}
+		
+	}
 })
 </script>

@@ -11,7 +11,7 @@
 							<div class="slider-content">
 								<h3>Satisfy Your Cravings with Our Delicious Snacks</h3>
 								<p>We offer a wide selection of delicious and satisfying snacks, both savory and sweet, using only the freshest ingredients for maximum flavor. Perfect for a quick bite or to share with friends and family. Contact us and try our delectable snacks, you'll want to come back for more.</p>
-								<a href="#" title="Order Online" class="order-online">Contact Us</a>
+								<router-link  to="/contact" title="Order Online" class="order-online">Contact Us</router-link>
 							</div>
 						</div>
 					</div>
@@ -22,7 +22,7 @@
 							<div class="slider-content">
 								<h3>Celebrate in Style with Our Custom Cakes</h3>
 								<p>We specialize in creating custom cakes for any occasion, using only the finest ingredients to ensure they are both delicious and beautiful, made with unique and creative designs to make your event special. Our skilled bakers take great care in crafting the perfect cake for your next event.</p>
-								<a href="#" title="Order Online" class="order-online">Get In Touch</a>
+								<router-link to="/contact" title="Order Online" class="order-online">Get In Touch</router-link>
 							</div>
 						</div>
 					</div>
@@ -33,7 +33,7 @@
 							<div class="slider-content">
 								<h3>Experience the Flavors of Nigeria with Our Authentic Cuisine</h3>
 								<p>We offer authentic Nigerian cuisine using freshest ingredients and traditional methods of preparation to ensure that every dish is packed with flavor, from Jollof Rice to Suya, traditional favorites that will satisfy. Experience the rich and diverse flavors of Nigeria by visiting the restaurant and trying the dishes.</p>
-								<a href="#" title="Order Online" class="order-online">Connect with Us</a>
+								<router-link to="/contact" title="Order Online" class="order-online">Connect with Us</router-link>
 							</div>
 						</div>
 					</div>
@@ -134,9 +134,159 @@
 					</div>
 				</div>
 			</div>
-			<a href="#" title="View Full Menu" class="view-full">Contact for More Details</a>
+			<router-link to="/contact" title="View Full Menu" class="view-full">Contact for More Details</router-link>
 		</div><!-- Menu Section 1 /- -->
 		<div class="section-padding"></div>
+		<!-- Call Out -->
+		<div class="call-out container-fluid no-padding">
+			<div class="section-padding"></div>
+			<div class="callout-bg-color">
+				<div class="col-md-5 img-box">
+					<img src="/assets/images/call-out.png" alt="call-out" width="273" height="288" />
+				</div>
+				<div class="col-md-7 callout-content">
+					<p>for more infomation,contact us on: (+234-(0)-803-592-0146)</p>
+				</div>
+			</div><!-- Container /- -->
+			<div class="section-padding"></div>
+			<div class="section-padding"></div>
+		</div><!-- Call Out /- -->
+		
+		<!-- Gallery Section -->
+		<div class="gallery-section container-fluid no-padding">
+			<div class="section-padding"></div>
+			<!-- Container -->
+			<div class="container">
+				<!-- Section Header -->
+				<div class="section-header">
+					<h3>Our Portfolio</h3>
+					<h5>Gallery</h5>
+					<img src="/assets/images/section-seprator.png" alt="section-seprator" width="169" height="15">
+					<p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day.</p>
+				</div><!-- Section Header /-  -->
+			</div><!-- Container / -->
+			
+			<ul class="portfolio-list no-left-padding">
+				<li class="col-md-3 col-sm-4 col-xs-6 no-padding wide design">
+					<div class="content-image-block">
+						<a href=".html#"><img src="/assets/images/gallery-1.jpg" alt="gallery" width="640" height="500"></a>
+						<div class="content-block-hover">
+							<h3>cream berry</h3>
+							<p>The shooting at some food and up through the ground oil.</p>
+						</div>
+					</div>
+				</li>
+				<li class="col-md-3 col-sm-4 col-xs-6 no-padding web">
+					<div class="content-image-block">
+						<a href=".html#"><img src="/assets/images/gallery-2.jpg" alt="gallery" width="320" height="500"></a>
+						<div class="content-block-hover">
+							<h3>cream berry</h3>
+							<p>The shooting at some food and up through the ground oil.</p>
+						</div>
+					</div>
+				</li>
+				<li class="col-md-3 col-sm-4 col-xs-6 no-padding video">
+					<div class="content-image-block">
+						<a href=".html#"><img src="/assets/images/gallery-3.jpg" alt="gallery" width="320" height="250"></a>
+						<div class="content-block-hover">
+							<h3>cream berry</h3>
+							<p>The shooting at some food and up through the ground oil.</p>
+						</div>
+					</div>
+				</li>
+				<li class="col-md-3 col-sm-4 col-xs-6 no-padding design">
+					<div class="content-image-block">
+						<a href=".html#"><img src="/assets/images/gallery-4.jpg" alt="gallery" width="320" height="250"></a>
+						<div class="content-block-hover">
+							<h3>cream berry</h3>
+							<p>The shooting at some food and up through the ground oil.</p>
+						</div>
+					</div>
+				</li>
+				<li class="col-md-3 col-sm-4 col-xs-6 no-padding web">
+					<div class="content-image-block">
+						<a href=".html#"><img src="/assets/images/gallery-5.jpg" alt="gallery" width="320" height="250"></a>
+						<div class="content-block-hover">
+							<h3>cream berry</h3>
+							<p>The shooting at some food and up through the ground oil.</p>
+						</div>
+					</div>
+				</li>
+				<li class="col-md-3 col-sm-4 col-xs-6 no-padding video">
+					<div class="content-image-block">
+						<a href=".html#"><img src="/assets/images/gallery-6.jpg" alt="gallery" width="320" height="250"></a>
+						<div class="content-block-hover">
+							<h3>cream berry</h3>
+							<p>The shooting at some food and up through the ground oil.</p>
+						</div>
+					</div>
+				</li>
+				<li class="col-md-3 col-sm-4 col-xs-6 no-padding design">
+					<div class="content-image-block">
+						<a href=".html#"><img src="/assets/images/gallery-7.jpg" alt="gallery" width="320" height="250"></a>
+						<div class="content-block-hover">
+							<h3>cream berry</h3>
+							<p>The shooting at some food and up through the ground oil.</p>
+						</div>
+					</div>
+				</li>
+				<li class="col-md-3 col-sm-4 col-xs-6 no-padding web">
+					<div class="content-image-block">
+						<a href=".html#"><img src="/assets/images/gallery-8.jpg" alt="gallery" width="320" height="250"></a>
+						<div class="content-block-hover">
+							<h3>cream berry</h3>
+							<p>The shooting at some food and up through the ground oil.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<a href="gallery-2.html" title="View More" class="view-more">View More</a>
+			<div class="section-padding"></div>
+		</div><!-- Gallery Section / -->
+		<!-- Testimonial Section -->
+		<div class="testimonial-section container-fluid no-padding">
+			<div class="container">
+				<div class="section-header">
+					<h3>Talk About Us</h3>
+					<h5>Our Clients</h5>
+					<img src="/assets/images/section-seprator.png" alt="section-seprator" width="169" height="15">
+				</div><!-- Section Header /-  -->
+				<!-- Main Carousel -->
+				<div id="main-carousel2" class="carousel slide carousel-fade" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#main-carousel2" data-slide-to="0" class="active"></li>
+						<li data-target="#main-carousel2" data-slide-to="1"></li>
+						<li data-target="#main-carousel2" data-slide-to="2"></li>
+					</ol>
+					<div role="listbox" class="carousel-inner">
+						<div class="item active">
+							<div class="testimonial-content">
+								<p><span><i class="fa fa-quote-left"></i></span>  The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day. <span><i class="fa fa-quote-right"></i></span></p>
+								<img src="/assets/images/testimonial.jpg" alt="testimonial" height="89" width="89" />
+								<h3>bradshaw <span>Co-Founder</span></h3>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="testimonial-content">
+								<p><span><i class="fa fa-quote-left"></i></span>  The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day. <span><i class="fa fa-quote-right"></i></span></p>
+								<img src="/assets/images/testimonial.jpg" alt="testimonial" height="89" width="89" />
+								<h3>bradshaw <span>Co-Founder</span></h3>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="testimonial-content">
+								<p><span><i class="fa fa-quote-left"></i></span>  The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day. <span><i class="fa fa-quote-right"></i></span></p>
+								<img src="/assets/images/testimonial.jpg" alt="testimonial" height="89" width="89" />
+								<h3>bradshaw <span>Co-Founder</span></h3>
+							</div>
+						</div>
+					</div>
+				</div><!-- Main Carousel /-  -->
+			</div><!-- Container /- -->
+			<div class="section-padding"></div>
+		</div><!-- Testimonial Section /- -->
   </main>
 </template>
 

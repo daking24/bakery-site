@@ -1526,7 +1526,7 @@ footer {
 /* * Page Banner */
 
 .page-banner {
-  background-image: url("images/page-banner.jpg");
+  background-image: url("/assets/images/page-banner.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

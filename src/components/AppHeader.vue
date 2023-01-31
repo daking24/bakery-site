@@ -1,7 +1,4 @@
 <template>
-  	
-
-
 	<!-- Header -->
 	<header class="header-main header-position container-fluid no-padding">
 		<!-- Menu Block -->
@@ -49,7 +46,7 @@ export default defineComponent({
         name: "About",      
       },
       {
-        path: "/blog",
+        path: "/coming-soon",
         name: "Blog",
       },
       {

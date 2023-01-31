@@ -347,7 +347,7 @@
 /* - Festival Section */
 
 .festival-section {
-  background: url("../images/festival-bg.jpg") no-repeat center center;
+  background: url("/assets/images/festival-bg.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
   position: relative;
@@ -588,7 +588,7 @@
 /* - Team Section */
 
 .team-section {
-  background: url("../images/team-bg.jpg") no-repeat center center;
+  background: url("/assets/images/team-bg.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
   position: relative;
@@ -822,7 +822,7 @@
 /* - Order Section 1 */
 
 .order-section-1 {
-  background: url("../images/order-online-bg.jpg") no-repeat center center;
+  background: url("/assets/images/order-online-bg.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -914,7 +914,7 @@
 /* - Counter Section */
 
 .counter-section {
-  background: url("../images/counter-bg.jpg") no-repeat center center;
+  background: url("/assets/images/counter-bg.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
   position: relative;
@@ -1453,7 +1453,7 @@
 }
 
 .widget-flicker a::after {
-  background-image: url("../images/focus.png");
+  background-image: url("/assets/images/focus.png");
   background-repeat: no-repeat;
   content: "";
   height: 19px;
@@ -2126,7 +2126,7 @@
 }
 
 .menu-section-1 .menu-details-tab .nav>li::after {
-  background-image: url("../images/menutab-ic.png");
+  background-image: url("/assets/images/menutab-ic.png");
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
@@ -2506,7 +2506,7 @@
 /* - Video Section */
 
 .video-section {
-  background-image: url("../images/video-bg.jpg");
+  background-image: url("/assets/images/video-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
