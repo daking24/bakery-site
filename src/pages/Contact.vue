@@ -16,24 +16,24 @@
 					<div class="section-header left-header">
 						<h3>Get In Touch</h3>
 						<h5>Contact</h5>
-						<img src="images/section-seprator-1.png" alt="section-seprator-1" width="70" height="3">
+						<img src="/assets/images/section-seprator-1.png" alt="section-seprator-1" width="70" height="3">
 						<p>The day for a three hour tour a three hour tour then one day he was shooting at some food and up through the ground came a oil that is its a beautiful day.</p>
 					</div><!-- Section Header /- -->
 					<form class="row">
 						<div class="form-group col-md-6">
-							<input type="text" id="input_fname" name="contact-fname" required="" placeholder="First Name" class="form-control">
+							<input type="text" id="input_fname" name="contact-fname" required placeholder="First Name" class="form-control">
 						</div>
 						<div class="form-group col-md-6">
-							<input type="text" id="input_lname" name="contact-lname" required="" placeholder="Last Name" class="form-control">
+							<input type="text" id="input_lname" name="contact-lname" required placeholder="Last Name" class="form-control">
 						</div>
 						<div class="form-group col-md-6">
-							<input type="text" id="input_email" name="contact-email" required="" placeholder="Your Email" class="form-control">
+							<input type="text" id="input_email" name="contact-email" required placeholder="Your Email" class="form-control">
 						</div>
 						<div class="form-group col-md-6">
-							<input type="text" id="input_phone" required="" name="contact-phone" placeholder="Your Phone Number" class="form-control">
+							<input type="text" id="input_phone" required name="contact-phone" placeholder="Your Phone Number" class="form-control">
 						</div>
 						<div class="form-group col-md-12">
-							<input type="text" id="input_subject" name="contact-subject" required="" placeholder="Subject" class="form-control">
+							<input type="text" id="input_subject" name="contact-subject" required placeholder="Subject" class="form-control">
 						</div>
 						<div class="form-group col-md-12">
 							<textarea id="textarea_message" name="contact-message" placeholder="Your Message" rows="6" class="form-control"></textarea>
